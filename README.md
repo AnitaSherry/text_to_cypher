@@ -48,7 +48,7 @@ Nebula数据库，和neo4j类似
 
 另外也没有在huggingface上搜索到比较好的数据集
 
-但是费点时间总能出结果，找到了一个质量很好的数据集: https://pan.baidu.com/s/1gR2XR9_kz8GPQT-3IAElfw?pwd=gcyb 
+但是费点时间总能出结果，找到了一个质量很好的数据集放到了huggingface:[text-to-neo4j-cypher-chinese](https://huggingface.co/datasets/Doraemon-AI/text-to-neo4j-cypher-chinese)
 
 来源于论文 SpCQL: A Semantic Parsing Dataset for Converting Natural Language into Cypher
 
