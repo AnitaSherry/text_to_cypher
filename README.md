@@ -1,4 +1,4 @@
-# 致力于实现知识图谱对接大模型
+# 设想实现知识图谱对接大模型
 
 本项目目的是把自然语言的文本转换成Neo4j的 Cypher 查询语句。和另一个大家可能已经比较熟悉的场景 Text2SQL：文本转换 SQL 在形式上没有什么区别。但是知识图谱查询的发展非常缓慢，RAG目前是主流，通过文本转换为向量进行相似度查询得到最优Prompt
 
@@ -42,7 +42,7 @@ Nebula数据库，和neo4j类似
 
 这里使用gpt-3生成查询语句
 
-## 本人想做的工作
+## 想做的工作
 
 经过在https://huggingface.co/的搜索，并没有找到相关模型，似乎只又chatgtp-4可做到生成查询语句
 
@@ -52,4 +52,8 @@ Nebula数据库，和neo4j类似
 
 来源于论文 SpCQL: A Semantic Parsing Dataset for Converting Natural Language into Cypher
 
-接下来准备微调gemma-7b，做出一个可以对接neo4j的模型
+微调模型必须选择中文指令模型，例如：[llama-3-chinese-8b-instruct-v2](https://hf-mirror.com/hfl/llama-3-chinese-8b-instruct-v2)
+
+## 难点
+现在知识图谱标签、关系没有统一，模型训练出来后只能针对训练集的知识图谱进行text-to-neo4j-cypher
+设想过对这些标签、关系向量化以达到统一的目的
